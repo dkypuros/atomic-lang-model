@@ -144,6 +144,8 @@ After reading this, you should understand:
 ## 🚀 Ready to Dive Deeper?
 
 **Next Steps:**
+- 🚶‍♂️ **Take the guided tour** → [Interactive Walkthrough](walkthrough.md)
+- 📏 **See the size comparison** → [Size Comparison](size-comparison.md) 
 - 🧮 **Curious about the math?** → [Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md)
 - 💻 **Want to see the code?** → [Implementation](../atomic-lang-model/)  
 - 📚 **Need the full story?** → [The Recursive Story](the-recursive-story.md)

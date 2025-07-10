@@ -8,6 +8,13 @@
 
 A mathematically rigorous, recursively complete language model that fits in under 50kB with zero runtime dependencies. Built on Chomsky's Minimalist Grammar theory with formal verification and empirical validation.
 
+### 📊 Mind-Blowing Size Comparison:
+- **Our Model**: 0.05 MB (50 KB)
+- **GPT-3**: 700,000 MB
+- **Ratio**: We're **14,000,000x smaller**!
+
+Yet we still provide provable recursion, next-token prediction, and formal verification. [See how we did it →](./docs/walkthrough.md)
+
 ## ✨ What Makes This Special
 
 🧮 **Mathematically Proven**: Formal proofs of recursive capability using Coq  
@@ -15,12 +22,14 @@ A mathematically rigorous, recursively complete language model that fits in unde
 🔬 **Scientifically Validated**: Tested with standard linguistic benchmark suites  
 🏗️ **Universal Grammar**: Based on Chomsky's Minimalist Grammar theory  
 ♾️ **Provably Recursive**: Generates a^n b^n patterns, proving non-regularity  
+🤖 **Probabilistic Language Model**: Next-token prediction with formal guarantees  
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Rust 1.70+ (for compilation)
 - Git (for cloning)
+- Python 3.8+ (optional, for probabilistic language model)
 
 ### 30-Second Demo
 ```bash
@@ -36,6 +45,9 @@ cargo test --release test_complete_recursive_proof
 
 # Run full benchmark suite
 cargo test --release --features bench
+
+# NEW: Try the probabilistic language model
+cd ../python && python tiny_lm.py
 ```
 
 ### What You'll See
@@ -112,6 +124,47 @@ This project demonstrates the full journey from mathematical theory to practical
 
 📖 **[The Recursive Story](./docs/the-recursive-story.md)** - The complete narrative connecting all pieces
 
+## 🆕 Probabilistic Language Model Extension
+
+We've extended the atomic language model with **probabilistic next-token prediction** capabilities while maintaining all formal guarantees:
+
+### Features
+- 🎲 **Weighted Grammar Rules**: Each production has learned probabilities
+- 🔮 **Next-Token Prediction**: Monte Carlo sampling for language modeling
+- 🔄 **Hybrid Architecture**: Combines Rust validation with Python inference
+- 🌐 **REST API**: Flask server for easy integration
+- 📦 **Still Ultra-Light**: <100kB total with all features
+
+### Quick Demo
+```bash
+# Run the probabilistic language model
+cd atomic-lang-model/python
+python tiny_lm.py
+
+# Start the API server
+python api_server.py
+
+# Try the interactive demo
+cd ../examples
+python language_model_demo.py
+```
+
+### Example API Usage
+```bash
+# Predict next token
+curl localhost:5000/predict?prefix=the+student
+
+# Generate sentences
+curl localhost:5000/generate?count=5
+
+# Validate syntax
+curl -X POST localhost:5000/validate \
+  -H "Content-Type: application/json" \
+  -d '{"sentences": ["the student left", "student the left"]}'
+```
+
+This extension bridges **formal grammar theory** with **practical NLP applications**, creating the world's smallest formally verified language model.
+
 ## 🎯 Key Features
 
 ### Mathematical Rigor
@@ -156,7 +209,14 @@ atomic-lang-model/
 │   ├── bench/                          # NLP evaluation suites
 │   ├── Coq/Minimalist.v               # Machine-verified proofs
 │   ├── spec.md                         # Formal specification
-│   └── REPORT.md                       # Implementation analysis
+│   ├── REPORT.md                       # Implementation analysis
+│   ├── python/                         # 🤖 Probabilistic LM extension
+│   │   ├── tiny_lm.py                 # Core probabilistic grammar
+│   │   ├── hybrid_model.py            # Rust-Python bridge
+│   │   └── api_server.py              # REST API server
+│   └── examples/                       # 🎮 Demo applications
+│       ├── language_model_demo.py     # Interactive demo
+│       └── quick_example.py           # Simple usage example
 └── flow/                          # 🌊 Claude-flow integration
     └── claude-flow/                    # AI orchestration platform
 ```

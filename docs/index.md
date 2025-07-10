@@ -6,6 +6,11 @@ Welcome to the complete documentation for the Atomic Language Model—a mathemat
 
 ## 🚀 New Here? Start Your Journey
 
+### 🚶‍♂️ Interactive Walkthrough (15 minutes)
+**Take a guided tour through the world's smallest language model!**
+- 🗺️ **NEW**: [Interactive Walkthrough](walkthrough.md) - See how we fit a language model in 50KB
+- 📊 **Discover**: Why it's 14,000,000x smaller than GPT-3 yet still works
+
 ### 🏃‍♂️ Quick Start (5 minutes)
 **Want to see it work right now?**
 - 📁 **Implementation**: [Quick Start Guide](../atomic-lang-model/QUICKSTART.md)
