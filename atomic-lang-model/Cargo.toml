@@ -1,0 +1,49 @@
+[package]
+name = "atomic-lang-model"
+version = "0.1.0"
+edition = "2021"
+description = "Extremely lightweight universal grammar implementation with provable recursion"
+authors = ["Atomic Language Model Team"]
+license = "MIT"
+repository = "https://github.com/user/atomic-lang-model"
+
+[lib]
+name = "atomic_lang_model"
+crate-type = ["lib", "cdylib"]
+
+[[bin]]
+name = "atomic-lm"
+path = "src/bin/main.rs"
+
+[dependencies]
+# Zero runtime dependencies for maximum portability
+
+[dev-dependencies]
+# Only needed for testing
+criterion = "0.5"
+
+[profile.release]
+opt-level = "z"     # Optimize for size
+lto = true          # Link-time optimization
+codegen-units = 1   # Single codegen unit for size
+panic = "abort"     # Remove panic handling overhead
+strip = true        # Strip symbols
+
+[profile.release.build-override]
+opt-level = "z"
+
+# Feature flags for different build targets
+[features]
+default = ["std"]
+std = []
+no_std = []
+wasm = []
+
+# Size optimization settings
+[profile.min-size]
+inherits = "release"
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
