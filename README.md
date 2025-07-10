@@ -298,12 +298,8 @@ Built on the mathematical foundations of:
 
 ---
 
-**Ready to explore the mathematical foundations of human language?**
+## 📖 Navigation
 
-🚀 **[Start with the Overview](./docs/recursive-language-overview.md)** → Learn what recursion means for language
-
-🧮 **[Dive into the Math](./docs/chomsky-mathematical-proofs.md)** → See the formal proofs
-
-💻 **[Try the Code](./atomic-lang-model/)** → Run the implementation
+**[Glossary of Concepts](./docs/glossary.md)** → A comprehensive A-Z guide to all key terms and concepts in the documentation
 
 *Built with mathematical rigor. Validated through empirical testing. Optimized for practical use.*
