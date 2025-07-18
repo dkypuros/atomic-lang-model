@@ -1,0 +1,22 @@
+# Rust/Cargo
+*/target/
+*/build/
+*/deps/
+*/incremental/
+**/*.d
+**/*.rlib
+**/*.dylib
+**/*.rs.bk
+*.pdb
+.rustc_info.json
+CACHEDIR.TAG
+
+
+*Cargo.lock
+
+# IDE configs
+.vscode/
+.idea/
+.DS_Store
+*.swp
+*.swo
