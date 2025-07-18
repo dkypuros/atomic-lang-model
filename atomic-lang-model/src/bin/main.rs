@@ -7,11 +7,11 @@ use atomic_lang_model::*;
 
 fn main() {
     println!("🧬 Atomic Language Model - Recursive Grammar Demo");
-    println!("=" .repeat(60));
+    println!("{}", "=".repeat(60));
     
     // Demonstrate aⁿbⁿ generation (proof of recursion)
     println!("\n📐 Mathematical Proof: aⁿbⁿ Generation");
-    println!("-".repeat(40));
+    println!("{}", "-".repeat(40));
     
     for n in 0..=5 {
         match generate_pattern("an_bn", n) {
@@ -25,7 +25,7 @@ fn main() {
     
     // Test recursive parsing capability
     println!("\n🔍 Parsing Test: Recursive Structures");
-    println!("-".repeat(40));
+    println!("{}", "-".repeat(40));
     
     let lexicon = test_lexicon();
     let test_sentences = vec![
@@ -48,7 +48,7 @@ fn main() {
     
     // Memory and performance metrics
     println!("\n📊 Performance Metrics");
-    println!("-".repeat(40));
+    println!("{}", "-".repeat(40));
     
     let mut workspace = Workspace::new(1024);
     workspace.add_lex(&lexicon[0]); // "the"
@@ -61,7 +61,7 @@ fn main() {
     
     // Demonstrate unbounded recursion principle
     println!("\n♾️  Unbounded Recursion Demonstration");
-    println!("-".repeat(40));
+    println!("{}", "-".repeat(40));
     
     println!("Generating increasingly complex patterns...");
     for n in 6..=10 {
@@ -78,7 +78,7 @@ fn main() {
     
     // Show formal properties
     println!("\n🧮 Formal Properties Verified");
-    println!("-".repeat(40));
+    println!("{}", "-".repeat(40));
     println!("✅ Non-regular language generation (aⁿbⁿ)");
     println!("✅ Context-free parsing capability");
     println!("✅ Minimalist Grammar operations (Merge/Move)");
