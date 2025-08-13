@@ -29,6 +29,8 @@ a^n b^n = { ε, ab, aabb, aaabbb, aaaabbbb, ... }
 
 This pattern requires **unbounded memory** to track the a's while processing b's. Finite-state machines have **bounded memory**. Therefore: **human language transcends regular languages**.
 
+📚 **Want the complete mathematical story?** See our [Mathematical Foundations](mathematical-foundations.md) guide for the full treatment of formal language theory, abstract algebra, and category theory that makes this work.
+
 ### 🔬 See It Yourself
 Our implementation demonstrates this mathematically:
 
@@ -48,7 +50,7 @@ cargo run --release
 ## 🏗️ How Our Implementation Works
 
 ### The Grammar Engine
-We implement **Minimalist Grammar** with two core operations:
+We implement **Minimalist Grammar** with two core algebraic operations:
 
 **1. Merge**: Combine linguistic objects
 ```
@@ -59,6 +61,8 @@ Merge(α:=ₓβ, X:γ) = ⟨X, [], [α, γ]⟩
 ```
 Move(α[+f], ...β[-f]...) = ⟨label(α), [], [MoveTarget(β), ...]⟩
 ```
+
+These operations form the **abstract algebra** of our system. For a deep dive into how these operations work mathematically, see [Abstract Algebra: The Grammar's Operations](mathematical-foundations.md#2-abstract-algebra-the-grammars-operations).
 
 ### The Result
 - ✅ **Provably recursive**: Generates a^n b^n for any n
@@ -145,8 +149,9 @@ After reading this, you should understand:
 
 **Next Steps:**
 - 🚶‍♂️ **Take the guided tour** → [Interactive Walkthrough](walkthrough.md)
+- 🧬 **Understand the complete mathematics** → [Mathematical Foundations](mathematical-foundations.md)
 - 📏 **See the size comparison** → [Size Comparison](size-comparison.md) 
-- 🧮 **Curious about the math?** → [Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md)
+- 🧮 **Learn the historical context** → [Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md)
 - 💻 **Want to see the code?** → [Implementation](../atomic-lang-model/)  
 - 📚 **Need the full story?** → [The Recursive Story](the-recursive-story.md)
 - 🎮 **Ready to experiment?** → `cargo run --release`

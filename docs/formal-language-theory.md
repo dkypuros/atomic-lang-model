@@ -1,8 +1,10 @@
 # Formal Language Theory and Grammar Hierarchies
 
+> **Note**: This document provides detailed technical specifications. For a comprehensive overview of the mathematical foundations including abstract algebra and category theory, see our [Mathematical Foundations](mathematical-foundations.md) guide.
+
 ## The Mathematical Framework Behind Language
 
-Formal language theory provides the mathematical foundation for understanding how recursive structures in human language can be precisely characterized and computed.
+Formal language theory provides the mathematical foundation for understanding how recursive structures in human language can be precisely characterized and computed. This forms the first pillar of our three-part mathematical framework, alongside [abstract algebra](mathematical-foundations.md#2-abstract-algebra-the-grammars-operations) and [category theory](mathematical-foundations.md#3-category-theory-the-fibration-architecture).
 
 ## The Chomsky Hierarchy
 
@@ -64,7 +66,7 @@ Regular ⊂ Context-Free ⊂ Mildly Context-Sensitive ⊂ Context-Sensitive
 
 ### Algebraic Formulation
 
-Stabler (1997) formalized Chomsky's Merge operation:
+Stabler (1997) formalized Chomsky's Merge operation, creating the algebraic system we implement:
 
 ```
 MG = ⟨V, C, Lex, F⟩
@@ -74,7 +76,9 @@ Where:
 - **V**: Feature values
 - **C**: Syntactic categories  
 - **Lex ⊂ V***: Finite lexicon of feature strings
-- **F**: Structure-building functions
+- **F**: Structure-building functions (Merge and Move)
+
+This algebraic formulation is the foundation of our implementation. For a detailed explanation of how these operations work as an algebraic system, see [Abstract Algebra: The Grammar's Operations](mathematical-foundations.md#2-abstract-algebra-the-grammars-operations).
 
 ### Core Operations
 

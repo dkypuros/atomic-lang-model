@@ -53,7 +53,7 @@ This ensures that all output is not only statistically likely but also formally 
 This isn't just another language model. It has several unique and powerful features:
 
 #### Mathematical Rigor
-The project is built on a foundation of formal proofs. It uses tests to demonstrate its ability to generate patterns like aⁿbⁿ (e.g., a a a b b b), which is a classic way to prove a grammar is more powerful than simple finite-state machines. The included Coq file (Minimalist.v) takes this further by formalizing these properties in a machine-checkable proof system.
+The project is built on a foundation of formal proofs spanning three mathematical fields. It uses tests to demonstrate its ability to generate patterns like aⁿbⁿ (e.g., a a a b b b), which is a classic way to prove a grammar is more powerful than simple finite-state machines. The included Coq file (Minimalist.v) takes this further by formalizing these properties in a machine-checkable proof system. For a complete understanding of the mathematics, see our [Mathematical Foundations](mathematical-foundations.md) guide.
 
 #### Advanced Linguistic Evaluation
 It doesn't just check for correctness; it evaluates its syntactic capabilities against established linguistic benchmarks:
@@ -61,7 +61,7 @@ It doesn't just check for correctness; it evaluates its syntactic capabilities a
 - **Colorless Green Suite:** Tests its understanding of syntax independent of meaning, using sentences like Noam Chomsky's famous "Colorless green ideas sleep furiously."
 
 #### An Experiment in Category Theory: The Fibration Bridge 🤯
-The project includes a forward-thinking experiment called the "Fibration Bridge." This uses a high-level mathematical concept (Grothendieck fibrations) to create a clean, modular architecture.
+The project includes a forward-thinking experiment called the "Fibration Bridge." This uses a high-level mathematical concept (Grothendieck fibrations) to create a clean, modular architecture. For the rigorous mathematical treatment of this architecture, see the [Category Theory section](mathematical-foundations.md#3-category-theory-the-fibration-architecture) in our Mathematical Foundations guide.
 
 - **Base:** The pure syntax from the Rust core.
 - **Fibres:** Different kinds of data that "live on top of" the syntax:
@@ -169,10 +169,15 @@ The atomic language model truly lives up to its name - it's one of the smallest 
 
 ### Stop 1: The Mathematical Foundation 🧮
 
-**Start here**: [`docs/recursive-language-overview.md`](recursive-language-overview.md)
+**Start here**: [`docs/mathematical-foundations.md`](mathematical-foundations.md)
 
-This is where your journey begins. You'll learn:
-- What recursion means for language
+This comprehensive guide explains the three mathematical pillars of the project:
+- **Formal Language Theory**: The Chomsky hierarchy and proof of recursion
+- **Abstract Algebra**: The Merge and Move operations that build syntax
+- **Category Theory**: The fibration architecture for hybrid models
+
+**Also explore**: [`docs/recursive-language-overview.md`](recursive-language-overview.md)
+- Deep dive into what recursion means for language
 - Why Chomsky's 1956 proof changed everything
 - How finite rules create infinite expression
 
@@ -394,10 +399,11 @@ Despite the tiny size, you can:
 
 After this walkthrough, explore:
 
-1. **[Mathematical Proofs](chomsky-mathematical-proofs.md)** - See the formal foundations
-2. **[Implementation Report](../atomic-lang-model/REPORT.md)** - Technical analysis
-3. **[Examples](examples.md)** - More hands-on tutorials
-4. **[Contributing](contributing.md)** - Join the project!
+1. **[Mathematical Foundations](mathematical-foundations.md)** - Comprehensive guide to the formal language theory, abstract algebra, and category theory
+2. **[Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md)** - Historical context and specific proofs
+3. **[Implementation Report](../atomic-lang-model/REPORT.md)** - Technical analysis
+4. **[Examples](examples.md)** - More hands-on tutorials
+5. **[Contributing](contributing.md)** - Join the project!
 
 ---
 

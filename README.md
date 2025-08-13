@@ -17,12 +17,12 @@ Yet we still provide provable recursion, next-token prediction, and formal verif
 
 ## ✨ What Makes This Special
 
-🧮 **Mathematically Proven**: Formal proofs of recursive capability using Coq  
-⚡ **Ultra-Lightweight**: Complete implementation under 50kB binary  
-🔬 **Scientifically Validated**: Tested with standard linguistic benchmark suites  
-🏗️ **Universal Grammar**: Based on Chomsky's Minimalist Grammar theory  
-♾️ **Provably Recursive**: Generates a^n b^n patterns, proving non-regularity  
-🤖 **Probabilistic Language Model**: Next-token prediction with formal guarantees  
+🧮 **[Mathematically Proven](./docs/walkthrough.md#mathematical-rigor)**: Formal proofs of recursive capability using Coq  
+⚡ **[Ultra-Lightweight](./docs/walkthrough.md#-the-incredible-size-story)**: Complete implementation under 50kB binary  
+🔬 **[Scientifically Validated](./docs/walkthrough.md#advanced-linguistic-evaluation)**: Tested with standard linguistic benchmark suites  
+🏗️ **[Universal Grammar](./docs/walkthrough.md#1-the-rust-core-a-formal-grammar-engine-)**: Based on Chomsky's Minimalist Grammar theory  
+♾️ **[Provably Recursive](./docs/walkthrough.md#mathematical-rigor)**: Generates a^n b^n patterns, proving non-regularity  
+🤖 **[Probabilistic Language Model](./docs/walkthrough.md#2-the-python-layer-a-probabilistic-model-)**: Next-token prediction with formal guarantees  
 
 ## 🚀 Quick Start
 
@@ -88,7 +88,12 @@ n=5: a a a a a b b b b b
 - How does this implementation work?
 
 ### 2. 🧮 The Mathematical Foundation  
-**Next**: [Chomsky's Mathematical Proofs](./docs/chomsky-mathematical-proofs.md)
+**Core Mathematics**: [Mathematical Foundations](./docs/mathematical-foundations.md)
+- Formal language theory & Chomsky hierarchy
+- Abstract algebra & grammar operations
+- Category theory & the fibration architecture
+
+**Historical Context**: [Chomsky's Mathematical Proofs](./docs/chomsky-mathematical-proofs.md)
 - The 1956 proof that changed linguistics
 - How finite-state grammars fail
 - Why recursion is mathematically necessary

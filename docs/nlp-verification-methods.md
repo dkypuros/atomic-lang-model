@@ -4,6 +4,8 @@
 
 How do we know if a computational system truly handles linguistic recursion? This requires moving from abstract proofs to concrete, measurable tests using real language data.
 
+While our [Mathematical Foundations](mathematical-foundations.md) establish the theoretical framework through formal language theory and abstract algebra, this document focuses on empirical validation—how we test whether our implementation truly captures the recursive properties of human language.
+
 ## The Challenge of Empirical Validation
 
 ### What We Need to Test

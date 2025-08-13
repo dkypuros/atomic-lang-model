@@ -2,7 +2,9 @@
 
 ## How Machines and Minds Handle Recursion
 
-While formal grammars define recursive structures mathematically, the actual processing of these structures requires computational models that can handle self-embedding with limited resources.
+While formal grammars define recursive structures mathematically (see our [Mathematical Foundations](mathematical-foundations.md) for the complete framework), the actual processing of these structures requires computational models that can handle self-embedding with limited resources.
+
+This document explores how the algebraic operations of [Merge and Move](mathematical-foundations.md#2-abstract-algebra-the-grammars-operations) are implemented computationally.
 
 ## The Processing Challenge
 

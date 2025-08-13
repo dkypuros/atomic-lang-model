@@ -25,73 +25,103 @@ Welcome to the complete documentation for the Atomic Language Model—a mathemat
 **How did we get from theory to implementation?**
 - 🌟 **Full narrative**: [The Recursive Story](the-recursive-story.md)
 
+## 🗺️ Documentation Structure
+
+**New!** Our documentation is now organized into three focused sections:
+
+### 📘 [USER_GUIDE/](USER_GUIDE/) - Get Started & Learn
+Perfect for new users and practical applications:
+- **[Installation](USER_GUIDE/01-installation.md)** - Quick setup to mathematical proof in 5 minutes
+- **[Quick Example](USER_GUIDE/02-quick-example.md)** - Your first steps with the model  
+- **[Practical Tutorials](USER_GUIDE/03-examples.md)** - Build real applications
+
+### 🔧 [DEVELOPER_GUIDE/](DEVELOPER_GUIDE/) - APIs & Contributing
+Everything developers need to integrate and contribute:
+- **[API Reference](DEVELOPER_GUIDE/01-api-reference.md)** - Complete Rust & Python API documentation
+- **[Contributing Guide](DEVELOPER_GUIDE/02-contributing.md)** - How to contribute to the project
+
+### 📚 [THEORY/](THEORY/) - Mathematical Foundations
+Deep theoretical understanding:
+- **[Mathematical Foundations](THEORY/01-mathematical-foundations.md)** - Complete mathematical framework (NEW!)
+- **[The Recursive Story](the-recursive-story.md)** - Historical narrative
+- **[Formal Language Theory](formal-language-theory.md)** - Technical specifications
+- **[All other theory docs...](.)** - Complete theoretical coverage
+
 ## 🗺️ Learning Pathways
 
 Choose your adventure based on your background and interests:
 
-### 👨‍🔬 Researcher / Linguist Path
+### 🚀 **Quick Start** (5 minutes)
 ```
-1. 🎯 Recursive Language Overview → What recursion means
-2. 🧮 Chomsky's Mathematical Proofs → The theoretical foundation  
-3. 🧪 NLP Verification Methods → How we test the claims
-4. ✅ Machine Verification → Formal proof development
-5. 💻 Implementation → See theory in practice
+1. [Installation](USER_GUIDE/01-installation.md) → Get it running
+2. [Quick Example](USER_GUIDE/02-quick-example.md) → See it work
+3. [Mathematical Foundations](THEORY/01-mathematical-foundations.md) → Understand why
 ```
 
-### 👨‍💻 Developer / Engineer Path  
+### 👨‍🔬 **Researcher / Linguist Path**
 ```
-1. 🚀 Quick Start Guide → Get it running
-2. 🎯 Recursive Language Overview → Understand the problem
-3. ⚙️ Formal Language Theory → Technical foundations
-4. 💻 Computational Processing → Implementation details
-5. 📊 Performance Analysis → Optimization techniques
-```
-
-### 🤖 AI/ML Practitioner Path
-```
-1. 🎯 Recursive Language Overview → Why recursion matters for AI
-2. 🧪 NLP Verification Methods → Testing methodologies
-3. 💻 Computational Processing → Algorithmic approaches
-4. 📊 Benchmark Results → Performance baselines
-5. 🔬 Research Extensions → Future directions
+1. [Mathematical Foundations](THEORY/01-mathematical-foundations.md) → Complete framework
+2. [Recursive Language Overview](recursive-language-overview.md) → Core concepts
+3. [Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md) → Historical foundation  
+4. [NLP Verification Methods](nlp-verification-methods.md) → Testing methodologies
+5. [Machine Verification](machine-verification.md) → Formal proof development
 ```
 
-### 🤔 Curious Learner Path
+### 👨‍💻 **Developer / Engineer Path**  
 ```
-1. 🎯 Recursive Language Overview → Accessible introduction
-2. 🌟 The Recursive Story → Complete narrative
-3. 🎮 Quick Start Guide → Hands-on experience
-4. 🧮 Mathematical Proofs → The formal foundation
-5. 💡 Key Insights → Broader implications
+1. [Installation](USER_GUIDE/01-installation.md) → Setup environment
+2. [API Reference](DEVELOPER_GUIDE/01-api-reference.md) → Learn the interfaces
+3. [Practical Tutorials](USER_GUIDE/03-examples.md) → Build applications
+4. [Mathematical Foundations](THEORY/01-mathematical-foundations.md) → Understand the theory
+5. [Contributing Guide](DEVELOPER_GUIDE/02-contributing.md) → Join development
 ```
 
-## 📚 Core Documentation
+### 🤖 **AI/ML Practitioner Path**
+```
+1. [Quick Example](USER_GUIDE/02-quick-example.md) → See capabilities
+2. [Mathematical Foundations](THEORY/01-mathematical-foundations.md) → Mathematical rigor
+3. [NLP Verification Methods](nlp-verification-methods.md) → Testing approaches
+4. [Practical Tutorials](USER_GUIDE/03-examples.md) → Integration examples
+5. [API Reference](DEVELOPER_GUIDE/01-api-reference.md) → Production deployment
+```
 
-### 🎯 Foundation
+### 🤔 **Curious Learner Path**
+```
+1. [Recursive Language Overview](recursive-language-overview.md) → What is recursion?
+2. [Quick Example](USER_GUIDE/02-quick-example.md) → See it in action
+3. [The Recursive Story](the-recursive-story.md) → Complete narrative
+4. [Mathematical Foundations](THEORY/01-mathematical-foundations.md) → The deep math
+5. [Practical Tutorials](USER_GUIDE/03-examples.md) → Build something!
+```
+
+## 📚 Quick Reference Guide
+
+### 📘 Getting Started (USER_GUIDE)
 | Document | What You'll Learn | Time |
 |----------|-------------------|------|
+| **[Installation](USER_GUIDE/01-installation.md)** | Setup to mathematical proof in 5 minutes | 5 min |
+| **[Quick Example](USER_GUIDE/02-quick-example.md)** | Your first steps with the model | 10 min |
+| **[Practical Tutorials](USER_GUIDE/03-examples.md)** | Build grammar checkers, predictors, DSLs | 60 min |
+
+### 🔧 Development (DEVELOPER_GUIDE) 
+| Document | What You'll Learn | Time |
+|----------|-------------------|------|
+| **[API Reference](DEVELOPER_GUIDE/01-api-reference.md)** | Complete Rust & Python APIs with examples | 20 min |
+| **[Contributing](DEVELOPER_GUIDE/02-contributing.md)** | How to contribute to the project | 10 min |
+
+### 📚 Theory (THEORY + Core Docs)
+| Document | What You'll Learn | Time |
+|----------|-------------------|------|
+| **[Mathematical Foundations](THEORY/01-mathematical-foundations.md)** ⭐ | Complete mathematical framework + code mapping | 25 min |
 | [Recursive Language Overview](recursive-language-overview.md) | What recursion is and why it matters | 10 min |
 | [The Recursive Story](the-recursive-story.md) | Complete historical narrative | 30 min |
-
-### 🧮 Mathematical Theory
-| Document | What You'll Learn | Time |
-|----------|-------------------|------|
 | [Chomsky's Mathematical Proofs](chomsky-mathematical-proofs.md) | The 1956 proof that changed everything | 20 min |
 | [Formal Language Theory](formal-language-theory.md) | Grammar hierarchies and complexity | 45 min |
+| [Computational Processing](computational-processing.md) | How recursion is implemented | 30 min |
+| [NLP Verification Methods](nlp-verification-methods.md) | How we test recursive capabilities | 25 min |
 | [Machine Verification](machine-verification.md) | Formal proofs in Coq | 30 min |
 
-### 💻 Implementation
-| Document | What You'll Learn | Time |
-|----------|-------------------|------|
-| [Computational Processing](computational-processing.md) | How recursion is implemented | 30 min |
-| [Quick Start Guide](../atomic-lang-model/QUICKSTART.md) | Hands-on setup and usage | 5 min |
-| [Implementation Report](../atomic-lang-model/REPORT.md) | Complete technical analysis | 15 min |
-
-### 🧪 Validation
-| Document | What You'll Learn | Time |
-|----------|-------------------|------|
-| [NLP Verification Methods](nlp-verification-methods.md) | How we test recursive capabilities | 25 min |
-| [Benchmark Results](../atomic-lang-model/bench/) | Empirical validation data | 10 min |
+⭐ **New & Enhanced**: The Mathematical Foundations doc now includes concept-to-code mapping, ASCII diagrams, and bridges theory with implementation!
 
 ## 🎯 Key Achievements Documented
 
