@@ -1,0 +1,45 @@
+# Status folder (local notes)
+status/
+
+# Common build and runtime files
+target/
+*.pyc
+__pycache__/
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Rust
+Cargo.lock
+debug/
+release/
+
+# Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node (if applicable)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+*.env
+
+# Logs
+*.log
+logs/
+
+# OS files
+Thumbs.db
+Desktop.ini
